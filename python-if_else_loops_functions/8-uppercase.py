@@ -2,4 +2,4 @@
 def uppercase(str):
     for str in text:
         if ord(str) >= 65 and ord(str) <= 90:
-            print(str, end="")
+            print("{}".format(str), end="")
