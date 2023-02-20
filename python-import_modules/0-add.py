@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"__main__"
 import add_0
 a=1
 b=2
