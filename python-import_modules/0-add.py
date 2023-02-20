@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from add_0 import  add
+from add_0 import add
 "__main__"
 "__name__"
 a = 1
