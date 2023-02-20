@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 "__main__"
 "__name__"
-import add_0
+from add_0 import  add
 a=1
 b=2
-ZE=add_0.add(a, b)
+ZE=add(a, b)
 print("{} + {} = {}".format(a,b,ZE))
