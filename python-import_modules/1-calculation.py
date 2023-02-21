@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 # calculator
-import calculator_1
+from  calculator_1 import add, sub, mul, div
 "__main__"
 "__name__"
 a = 10
 b = 5
 
-ZE = calculator_1.add(a, b)
-PE = calculator_1.sub(a, b)
-GE = calculator_1.mul(a, b)
-FE = calculator_1.div(a, b)
+ZE = add(a, b)
+PE = sub(a, b)
+GE = mul(a, b)
+FE = div(a, b)
 
 print("{} + {} = {}".format(a, b, ZE))
 print("{} - {} = {}".format(a, b, PE))
