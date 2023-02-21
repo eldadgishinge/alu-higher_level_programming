@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # calculator
 import calculator_1
-
+"__main__"
+"__name__"
 a = 10
 b = 5
 
