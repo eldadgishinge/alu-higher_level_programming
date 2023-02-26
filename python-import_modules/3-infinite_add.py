@@ -5,7 +5,6 @@ if __name__ == "__main__":
     nu_nu = len(nu)
     if nu_nu == 0:
         print("0")
-        print(type(nu))
     else:
         add = sum(int(i) for i in nu)
         print(add)
