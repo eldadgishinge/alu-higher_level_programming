@@ -8,10 +8,10 @@ if __name__ == "__main__":
 
     if num_arg != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        print("1")
+        exit(1)
         if sys.argv[2] not in list(op.keys()):
             print("Unknown operator. Available operators: +, -, * and /")
-            print("1")
+            exit(1)
 
 a = int(argv[1])
 b = int(argv[3])
