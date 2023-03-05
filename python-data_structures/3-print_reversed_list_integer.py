@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 def print_reversed_list_integer(my_list=[]):
 
-    if my_list is None:
-        return None
+    #if my_list is None:
+     #   return None
 
-    #my_list.sort()
     my_list.reverse()
 
     for i in my_list:
