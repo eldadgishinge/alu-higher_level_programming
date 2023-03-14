@@ -1,5 +1,5 @@
 #!/usr/bin/python3
+"""This is my first class"""
 class Square:
+    """empty class"""
     pass
-    'print(__import__("my_module").MyClass.__doc__)'
-    'print(__import__("my_module").__doc__)'
