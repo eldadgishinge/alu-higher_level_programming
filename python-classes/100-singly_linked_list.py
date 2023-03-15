@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""class called node"""
+
+
 class Node:
+    """ NODE """
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -26,6 +30,7 @@ class Node:
 
 
 class SinglyLinkedList:
+    """SinglyLinkedList"""
     def __init__(self):
         self.head = None
 
