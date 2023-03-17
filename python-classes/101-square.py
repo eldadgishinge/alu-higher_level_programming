@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """First rectangle"""
 
+
 class Rectangle:
     """First rectangle"""
     def __init__(self, width=0, height=0):
