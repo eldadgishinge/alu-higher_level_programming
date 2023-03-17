@@ -42,7 +42,10 @@ def get_solution(board):
 
 
 def xout(board, row, col):
-    """
+    """X out spots on a chessboard.
+    All spots where non-attacking queens can no
+    longer be played are X-ed out.
+    Args:
         board (list): The current working chessboard.
         row (int): The row where a queen was last played.
         col (int): The column where a queen was last played.
@@ -90,7 +93,14 @@ def xout(board, row, col):
 
 
 def recursive_solve(board, row, queens, solutions):
-    """solve 
+    """Recursively solve an N-queens puzzle.
+    Args:
+        board (list): The current working chessboard.
+        row (int): The current working row.
+        queens (int): The current number of placed queens.
+        solutions (list): A list of lists of solutions.
+    Returns:
+        solutions
     """
     if queens == len(board):
         solutions.append(get_solution(board))
