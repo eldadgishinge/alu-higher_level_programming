@@ -2,6 +2,7 @@
 """First rectangle"""
 
 class Rectangle:
+    """First rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes a new Rectangle object with the given width and height"""
         self.width = width
