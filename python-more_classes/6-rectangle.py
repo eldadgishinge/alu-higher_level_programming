@@ -1,21 +1,27 @@
 #!/usr/bin/python3
-"""First rectangle"""
+"""Rectangle class."""
 
 
 class Rectangle:
-    """First rectangle"""
+    """Represent a 
+    """
+
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
+        """Initialize a new
+        """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """width"""
+        """ of the Rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -24,12 +30,11 @@ class Rectangle:
 
     @property
     def height(self):
-        """width"""
+        """ Rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """width"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -37,34 +42,35 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        return self.__height * self.__width
+        """" Rectangle."""
+        return (self.__width * self.__height)
 
     def perimeter(self):
-        if self.__width == 0:
-            return 0
-        elif self.__height == 0:
-            return 0
-        else:
-            return (self.__width + self.__height)*2
+        """Return the """
+        if self.__width == 0 or self.__height == 0:
+            return (0)
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
+        """Return the
+        """
         if self.__width == 0 or self.__height == 0:
-            return ""
-        rect = ""
+            return ("")
+
+        rect = []
         for i in range(self.__height):
-            for j in range(self.__width):
-                rect += "#"
+            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                rect += "\n"
-        return rect
+                rect.append("\n")
+        return ("".join(rect))
 
     def __repr__(self):
-        """Rectangle"""
+        """ Rectangle."""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
 
     def __del__(self):
-        """Rectangle."""
+        """ Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
