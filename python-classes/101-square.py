@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+
 """First rectangle"""
 
 
 class Rectangle:
-"""First rectangle"""
+    """First rectangle"""
     
     def __init__(self, width=0, height=0):
         """Initializes a new Rectangle object with the given width and height"""
