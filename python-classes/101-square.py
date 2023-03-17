@@ -1,62 +1,66 @@
 #!/usr/bin/python3
+"""class Square."""
 
-"""First rectangle"""
 
+class Square:
+    """Represent a square."""
 
-class Rectangle:
-    """First rectangle"""
-    
-    def __init__(self, width=0, height=0):
-        """Initializes a new Rectangle object with the given width and height"""
-        self.width = width
-        self.height = height
-
-    @property
-    def width(self):
-        """Getter method to retrieve the value of the width attribute"""
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        """Setter method to set the value of the width attribute"""
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new square
+        """
+        self.size = size
+        self.position = position
 
     @property
-    def height(self):
-        """Getter method to retrieve the value of the height attribute"""
-        return self.__height
+    def size(self):
+        """Get/set the current size of the square."""
+        return (self.__size)
 
-    @height.setter
-    def height(self, value):
-        """Setter method to set the value of the height attribute"""
+    @size.setter
+    def size(self, value):
         if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be >= 0")
-        self.__height = value
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
+
+    @property
+    def position(self):
+        """Get/set the current position of the square."""
+        return (self.__position)
+
+    @position.setter
+    def position(self, value):
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     def area(self):
-        """Returns the area of the rectangle"""
-        return self.__width * self.__height
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
 
-    def perimeter(self):
-        """Returns the perimeter of the rectangle"""
-        if self.__width == 0 or self.__height == 0:
-            return 0
-        else:
-            return 2 * (self.__width + self.__height)
+    def my_print(self):
+        """Print the square with the # character."""
+        if self.__size == 0:
+            print("")
+            return
+
+        [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            print("")
 
     def __str__(self):
-        """Returns a string representation of the rectangle using '#' characters"""
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        else:
-            return '\n'.join(['#' * self.__width] * self.__height)
-
-    def __repr__(self):
-        """Returns a string representation of the rectangle that can be used to recreate the object"""
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        """Define the print() representation of a Square."""
+        if self.__size != 0:
+            [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            if i != self.__size - 1:
+                print("")
+        return ("")
