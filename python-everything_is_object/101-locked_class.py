@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""magic_string"""
+'magic_string'
+
 
 def magic_string():
     """magic_string"""
