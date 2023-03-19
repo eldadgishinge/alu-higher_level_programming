@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-'magic_string'
-
-
-def magic_string():
-    """magic_string"""
-    if not hasattr(magic_string, 'counter'):
-        magic_string.counter = 0
-    magic_string.counter += 1
-    return ', '.join(['BestSchool' for i in range(magic_string.counter)])
+class LockedClass:
+    """
+    A class that prevents the user from dynamically creating new instance attributes,
+    except if the new instance attribute is called first_name.
+    """
+    __slots__ = "first_name"
