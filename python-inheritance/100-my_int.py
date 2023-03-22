@@ -4,7 +4,6 @@
 
 class MyInt(int):
     """Yes"""
-
     def __eq__(self, other):
         return self.real != other
     
