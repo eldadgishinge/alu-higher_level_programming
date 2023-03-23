@@ -28,7 +28,7 @@ case 2: not defined object
 
 >>> MyList = _import_('1-my_list').MyList
 >>> my_list2.print_sorted()
-Traceback (most recent call last):
+Traceback (most recent call last, and it's error):
   File "<stdin>", line 1, in <module>
 NameError: name 'my_list2' is not defined
 >>>
