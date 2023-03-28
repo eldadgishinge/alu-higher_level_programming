@@ -1,2 +1,2 @@
---good
+-- Lists
 SHOW DATABASES;
