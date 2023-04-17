@@ -5,7 +5,6 @@
 
 def matrix_mul(m_a, m_b):
     """Multiply two matrices.
-
     Args:
         m_a (list of lists of ints/floats): The first matrix.
         m_b (list of lists of ints/floats): The second matrix.
@@ -41,7 +40,7 @@ def matrix_mul(m_a, m_b):
         raise TypeError("m_b should contain only integers or floats")
 
     if not all(len(row) == len(m_a[0]) for row in m_a):
-        raise TypeError("each row of m_a must be of the same size")
+        raise TypeError("each row of m_a must should be of the same size")
     if not all(len(row) == len(m_b[0]) for row in m_b):
         raise TypeError("each row of m_b must should be of the same size")
 
@@ -66,3 +65,4 @@ def matrix_mul(m_a, m_b):
         new_matrix.append(new_row)
 
     return new_matrix
+
