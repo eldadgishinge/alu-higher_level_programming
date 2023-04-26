@@ -1,9 +1,6 @@
 
 #!/usr/bin/python3
-"""
-Lists all City objects from a database
-"""
-
+"""Lists all City objects from a database"""
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
