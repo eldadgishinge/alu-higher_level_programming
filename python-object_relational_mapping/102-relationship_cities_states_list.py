@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Lists all City objects from a database"""
 import sqlalchemy
