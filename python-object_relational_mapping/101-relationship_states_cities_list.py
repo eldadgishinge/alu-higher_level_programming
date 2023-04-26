@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-Lists all State objects and corresponding City objects contained in a database
-"""
-
+"""Lists all State objects and corresponding City objects contained in a database"""
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
