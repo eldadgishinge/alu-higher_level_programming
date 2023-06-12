@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const argsCount = process.argv(2);
+const argsCount = process.argv;
 if ( argsCount[0] !== undefined){
     console.log( argsCount);
     }
