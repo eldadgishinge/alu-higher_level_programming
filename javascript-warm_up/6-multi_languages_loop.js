@@ -2,7 +2,7 @@
 
 const arr = ['C is fun','Python is cool', 'JavaScript is amazing']
 
-for (var i = 0; i <arr.length; i++) {
+for (i in arr) {
     console.log(arr[i])
 }
 
