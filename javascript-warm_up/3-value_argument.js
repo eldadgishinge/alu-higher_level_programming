@@ -1,8 +1,9 @@
-#!/usr/bin/node
+//#!/usr/bin/node
 
-const argsCount = process.argv;
-if (argsCount != null ){
+const argsCount =  process.argv ;
+if (argsCount.length != null){
 console.log(argsCount);
-} else{
+}
+else{
 console.log('No argument');
 }
