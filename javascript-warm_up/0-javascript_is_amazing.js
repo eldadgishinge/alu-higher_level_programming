@@ -1,4 +1,4 @@
 #!/usr/bin/node
 
-let myVar = "avaScript is amazing";
-console.log(myVar)
+cons myVar = 'JavaScript is amazing';
+console.log(myVar);
