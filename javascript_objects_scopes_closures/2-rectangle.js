@@ -1,6 +1,4 @@
-const Rectangle = require("./0-rectangle");
-
-//#!/usr/bin/node
+#!/usr/bin/node
 module.exports = class Rectangle {
     constructor (w, h) {
       this.width = w;
@@ -10,5 +8,3 @@ module.exports = class Rectangle {
     }
     }
   };
-
-
