@@ -1,8 +1,2 @@
 #!/usr/bin/node
-
-function add (a,b){
-    let sum  = a + b;
-    console.log(sum);
-}
-
-add(3,5);
+module.exports.add = (a, b) => parseInt(a) + parseInt(b);

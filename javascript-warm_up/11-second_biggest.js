@@ -15,8 +15,3 @@ switch (argsCount) {
     console.log(numbers[1]);
     break;
 }
-
-
-
-
-
