@@ -1,2 +1,2 @@
 #!/usr/bin/node
-module.experts = class  Rectangle {}
+module.exports = class Rectangle {};
