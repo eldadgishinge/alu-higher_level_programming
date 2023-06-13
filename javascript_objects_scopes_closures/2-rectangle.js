@@ -1,10 +1,10 @@
-module.experts = class Rectangle{
-    constructor (w,l){
-        this.width = w;
-        this.length = l;
-        if (w <= 0 || l <= 0) {
+#!/usr/bin/node
+module.exports = class Rectangle {
+  constructor (w, h) {
+    this.width = w;
+    this.height = h;
+  if (w <= 0 || l <= 0) {
             var obj = {}
         }
-
     }
-  }
+};
