@@ -1,5 +1,3 @@
-#!/usr/bin/node
-
 function factorial (number) {
     if (isNaN(number) || number <= 1) {
       return 1;
@@ -7,4 +5,4 @@ function factorial (number) {
     return number * factorial(number - 1);
   }
 
- console.log(factorial(process.argv[2]));
+  factorial(5)
