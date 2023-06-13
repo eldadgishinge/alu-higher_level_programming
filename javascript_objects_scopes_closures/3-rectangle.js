@@ -4,16 +4,7 @@ module.exports = class Rectangle {
       if (w > 0 && h > 0) { [this.width, this.height] = [w, h]; }
     }
 
-    print(){
-        Rectangle.width = w;
-        Rectangle.height = h;
-        for (let i = 0; i < w; i++){
-            for (let i = 0; i< h; i++){
-                console.log('X'.repeat(w,h))
-            }
-
-        }
-
+    print () {
+      for (let i = 0; i < this.height; i++) console.log('X'.repeat(this.width));
     }
   };
-
