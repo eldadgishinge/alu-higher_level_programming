@@ -10,7 +10,7 @@ exports.nbOccurences = function (list, searchElement) {
         }
 
     }
-    console.log(y)
+    return y
 
 }
 
