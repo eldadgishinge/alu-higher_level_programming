@@ -3,7 +3,7 @@ exports.nbOccurences = function (list, searchElement) {
     let y = 0
     for (let i = 0; i < list.length; i++) {
 
-        if (list[i] == searchElement) {
+        if (list[i] === searchElement) {
 
             y = y + 1
 
