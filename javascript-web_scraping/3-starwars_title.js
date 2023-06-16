@@ -15,5 +15,7 @@ if (process.argv.length > 2) {
       console.log(movie.title);
     }
   });
-} else {
-  console.log('Please provide the movie ID as an argument.');}
+}
+else{
+  console.log('Please provide the movie ID as an argument.');
+}
