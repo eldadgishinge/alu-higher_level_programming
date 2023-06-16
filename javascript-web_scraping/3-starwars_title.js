@@ -16,6 +16,6 @@ if (process.argv.length > 2) {
     }
   });
 }
-else{
+else  {
   console.log('Please provide the movie ID as an argument.');
 }
