@@ -14,7 +14,7 @@ if (process.argv.length > 2) {
       const movie = JSON.parse(body);
       console.log(movie.title);
     }
-  });}
-else {
+  });
+} else {
   console.log('Please provide the movie ID as an argument.');
 }
